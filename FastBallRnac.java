@@ -7,20 +7,16 @@ public class Main {
         try {
             Robot r = new Robot();
             int mouseClick = InputEvent.BUTTON1_MASK;
-                TimeUnit.SECONDS.sleep(1);
-                r.mousePress(mouseClick);
-                r.mouseRelease(mouseClick);
-                TimeUnit.MILLISECONDS.sleep(50);
-                r.keyPress(KeyEvent.VK_R);
-                TimeUnit.MILLISECONDS.sleep(50);
-                r.keyRelease(KeyEvent.VK_R);
-                TimeUnit.MILLISECONDS.sleep(324);
-                r.keyPress(KeyEvent.VK_1);
-                r.keyRelease(KeyEvent.VK_1);
-                TimeUnit.SECONDS.sleep(1);
-                r.keyPress(KeyEvent.VK_1);
-                r.keyRelease(KeyEvent.VK_1);
-                TimeUnit.SECONDS.sleep(4);
+            TimeUnit.SECONDS.sleep(1);
+            r.mousePress(mouseClick);
+            r.mouseRelease(mouseClick);
+            TimeUnit.MILLISECONDS.sleep(50);
+            r.keyPress(KeyEvent.VK_R);
+            TimeUnit.MILLISECONDS.sleep(50);
+            r.keyRelease(KeyEvent.VK_R);
+            TimeUnit.MILLISECONDS.sleep(325);
+            r.keyPress(KeyEvent.VK_1);
+            r.keyRelease(KeyEvent.VK_1);
         }catch (Exception e){}
     }
 }
